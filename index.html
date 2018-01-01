@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h5>My Calculator</h5>
+    
+    <!-- RESULT DISPLAY -->
+    
+    <div class="row">
+      <div class="col-md-11" id="displej">
+        <p id="rezultatOperacije"></p><br>
+        <p id="rezultat"></p>
+      </div>
+    </div>
+    <div id="power-button" class="row">
+      <button id="power" onclick="Calculator.paliGasi()">On</button>
+    </div>
+    
+    <!-- AC, CE, /, * -->
+   
+    <div class="row">
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" onclick="Calculator.clearAll()">AC</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" onclick="Calculator.clearEntry()">CE</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value="/" onclick="Calculator.dodajOperaciju(this.value)">/</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value="*" onclick="Calculator.dodajOperaciju(this.value)">x</button>
+      </div>    
+    </div>
+   
+    
+    <!-- 7, 8, 9, - -->
+    
+    <div class="row">
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "7" onclick="Calculator.dodajCifru(this.value)">7</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "8" onclick="Calculator.dodajCifru(this.value)">8</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "9" onclick="Calculator.dodajCifru(this.value)">9</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value="-" onclick="Calculator.dodajOperaciju(this.value)">-</button>
+      </div>
+    </div>
+    
+     <!-- 4, 5, 6, + -->
+    
+    <div class="row">
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "4" onclick="Calculator.dodajCifru(this.value)">4</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "5" onclick="Calculator.dodajCifru(this.value)">5</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "6" onclick="Calculator.dodajCifru(this.value)">6</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value="+" onclick="Calculator.dodajOperaciju(this.value)">+</button>
+      </div>
+    </div>
+    
+     <!-- 1, 2, 3 -->
+    
+     <div class="row">
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "1" onclick="Calculator.dodajCifru(this.value)">1</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "2" onclick="Calculator.dodajCifru(this.value)">2</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "3" onclick="Calculator.dodajCifru(this.value)">3</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary double" value="=" onclick="Calculator.jednako()">=</button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-6">
+        <button id= "nula" class="btn btn-secondary normal" value= "0" onclick="Calculator.dodajCifru(this.value)">0</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-secondary normal" value= "." onclick= "Calculator.dodajCifru(this.value)">. </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="potpis">
+    <span> Developed by <strong>Ismail Džigal</strong></span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+
+  </body>
+  </html>

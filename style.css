@@ -1,0 +1,142 @@
+
+  body {
+    background-color: rgb(184, 185, 186);
+  }
+  
+  .container {
+    width: 17.5em;
+    min-height: 29em;
+    background-color: rgb(74, 77, 84);
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px 1px rgba(0, 0, 0, 0.8), inset -1px -5px 10px 0.5px 
+  rgb(116, 117, 119);
+  }
+  
+  #displej {
+    background-color: black;
+    min-height: 6em;
+    max-width: 16em;
+    border-radius: 10px;
+    text-align: right;
+    margin-left: 0.75em;
+    color: black;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #rezultatOperacije {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .row {
+    margin-bottom: 2%;
+    min-height: 2em;
+  }
+  
+  .normal {
+    height: 2.5em;
+    width: 3.65em;
+    margin: 0.35em;
+    border-radius: 15px;
+    background-color: rgb(155, 157, 160);
+    border: 1px solid rgb(155, 157, 160);
+    color: white;
+  }
+
+  .normal:hover {
+    height: 2.5em;
+    width: 3.65em;
+    margin: 0.35em;
+    border-radius: 15px;
+    background-color: rgb(155, 157, 160);
+    color: white;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .normal:active {
+    height: 2.4em;
+  }
+
+  .double {
+    height: 190%;
+    width: 3.65em;
+    margin: 0.35em;
+    border-radius: 15px;
+    background-color: rgb(155, 157, 160);
+    border: 1px solid rgb(155, 157, 160);
+    color: white;
+  }
+
+  .double:hover {
+    height: 190%;
+    width: 3.65em;
+    margin: 0.35em;
+    border-radius: 15px;
+    background-color: rgb(155, 157, 160);
+    color: white;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .double:active {
+    height: 185%;
+    outline: none;
+  }
+  
+  #nula {
+    height: 2.5em;
+    width: 8.05em;
+  }
+  
+  #nula:active {
+    height: 2.4em;
+    outline: none;
+  }
+  
+  span {
+    font-style: italic;
+  }
+  
+  #potpis {
+    text-align: center;
+  }
+  
+  #power {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 2.3em;
+    width: 2.3em;
+    font-weight: bold;
+    background-color: rgb(180, 187, 198);
+    border: none;
+    color: green;
+    border: 1px solid black;
+  }
+  
+  #power:focus{
+    text-decoration: none;
+    outline: none;
+  }
+  
+  #power-button {
+    height: 2.7em;
+  }
+  
+  #power:active {
+    height: 2.2em;
+  }
+  
+  #rezultat {
+    font-size: 80%;
+  }
+  
+  
